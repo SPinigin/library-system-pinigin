@@ -16,10 +16,10 @@
 - https://33d6d7af49dbe331.mokky.dev/books
 
 ## Установка и запуск
-\\\`\\\`\\\`bash
+\`\`\`bash
 npm install
 npm run dev
-\\\`\\\`\\\`
+\`\`\`
 
 ## Скриншоты
 ![Главная страница](./screenshots/1.png)
