@@ -1,0 +1,106 @@
+.bookList {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.bookCard {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.bookCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookCard.read {
+  border-color: #28a745;
+  background: #f8fff9;
+}
+
+.bookInfo {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.author, .year {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.statusRead {
+  background: #d4edda;
+  color: #155724;
+}
+
+.statusUnread {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.toggleButton, .deleteButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.markRead {
+  background: #28a745;
+  color: white;
+}
+
+.markRead:hover {
+  background: #218838;
+}
+
+.markUnread {
+  background: #ffc107;
+  color: #212529;
+}
+
+.markUnread:hover {
+  background: #e0a800;
+}
+
+.deleteButton {
+  background: #dc3545;
+  color: white;
+}
+
+.deleteButton:hover {
+  background: #c82333;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 18px;
+}
